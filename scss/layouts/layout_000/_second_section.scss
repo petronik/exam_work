@@ -1,0 +1,32 @@
+.services-box {
+
+  @include display(flex);
+  @include justify-content(space-between);
+
+
+  @include e(item) {
+    @include display(flex);
+    @include flex-direction(column);
+    margin-right: 30px;
+    text-align: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @include e(title) {
+    font-size: em(24px);
+    color: $grey;
+    margin-top: auto;
+    padding-top: 45px;
+
+  }
+
+  @include e(content) {
+    line-height: em(30px, 14px);
+  }
+  @include e(img) {
+    order: -1;
+  }
+}

@@ -1,0 +1,58 @@
+.container-fluid_forth {
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+  background: #FFFFFF;
+}
+.header4 {
+  position: relative;
+  margin-top: 120px;
+  margin-bottom: 90px;
+
+  padding-bottom: 70px;
+  text-transform: uppercase;
+  font-size: em(35px);
+  font-weight: 700;
+}
+.header4::after {
+  content: '';
+  width: 90px;
+  height: 3px;
+  position: absolute;
+  background: #222222;
+  left:50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+}
+.gallery4 {
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(space-around);
+  width: 100%;
+  padding-bottom: 75px;
+}
+.fox:hover{
+  opacity: 0.2;
+
+}
+.button4 {
+  margin-bottom: 80px;
+  @include e(link){
+
+    line-height: em(60px);
+    font-size: em(24px);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid #000 5px;
+    color: #222222;
+    padding: 20px 150px;
+    &:hover {
+      background-color: #3db5da;
+      opacity: 0.2;
+
+    }
+  }
+}

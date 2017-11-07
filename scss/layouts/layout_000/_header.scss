@@ -1,0 +1,60 @@
+.header-box {
+  @include display(flex);
+  align-items: center;
+
+  @include e(title) {
+    font-size: 18px;
+    font-weight: bold;
+    color: $white;
+
+    span {
+      color: $blue;
+    }
+  }
+} // header-box
+
+.top-menu {
+  margin-left: auto;
+
+  a {
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 45px;
+    padding-bottom: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      border-bottom: 3px solid $white;
+
+    }
+  }
+}
+
+.header-content {
+  padding-top: 250px;
+  padding-bottom: 230px;
+  text-align: center;
+
+  @include e(title) {
+    font-size: em(48px);
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  @include e(content) {
+    color: $white;
+    margin-bottom: 16px;
+  }
+
+}
+
+.top-link {
+  padding-bottom: 40px;
+  text-align: center;
+
+
+}

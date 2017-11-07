@@ -1,0 +1,45 @@
+
+.container-fluid_third {
+  @include display(flex);
+  @include justify-content(space-between);
+  background: url(#{$imgPath}Rectangle_3.png) no-repeat;
+  background-size: cover;
+  color: $white;
+
+}
+.box-right {
+  color: $white;
+  padding-left: 15px;
+  max-width: 50%;
+
+  @include e(header1){
+    @include display(flex);
+    @include justify-content(flex-start);
+    @include align-items(center);
+
+    font-size: em(45px);
+    text-transform: uppercase;
+    margin-top: 170px;
+    padding-bottom: 20px;
+
+
+  }
+  @include e(content){
+    font-size: em(22px);
+    padding-bottom: 70px;
+  }
+  a {
+    color: $white;
+    font-size: em(18px);
+  }
+}
+.box-left {
+  @include display(flex);
+  @include justify-content(flex-start);
+  @include align-items(center);
+  flex: 1;
+
+  max-width: 50%;
+  margin-top: 70px;
+
+}
